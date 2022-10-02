@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto;
+
+import "country.proto";
+
+option go_package = "github.com/basictest01/grpc/pb";
+
+message CreateCountryRequest {
+    Country country = 1;
+}
+
+message CreateCountryResponse {
+    Country country = 1;
+}

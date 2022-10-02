@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "github.com/basictest01/grpc/pb";
+
+message Country {
+    string id = 1;
+    string code = 2;
+    string name = 3;
+    string region = 4;
+    string subRegion = 5;
+}
+

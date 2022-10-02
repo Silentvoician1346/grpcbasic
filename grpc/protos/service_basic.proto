@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proto;
+
+import "rpc_create_country.proto";
+import "rpc_get_country.proto";
+
+option go_package = "github.com/basictest01/grpc/pb";
+
+service BasicTest {
+    rpc CreateCountry (CreateCountryRequest) returns (CreateCountryResponse);
+    rpc GetCountry (GetCountryRequest) returns (GetCountryResponse);
+
+}
